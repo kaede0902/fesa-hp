@@ -8,7 +8,8 @@ const NavBar = () => {
         <AppBar position="static">
             <Toolbar>
                 <Typography variant="title" color="inherit">
-                FESA 会社情報 044...
+                FESA 会社情報 045-491-4108
+                水曜定休 西神奈川2
                 </Typography>
             </Toolbar>
         </AppBar>
