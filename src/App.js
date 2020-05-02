@@ -75,10 +75,9 @@ const useStyles = makeStyles((theme) => ({
 const tiers = [
   {
     title: '見積もり',
-    price: '0',
     description: ['エアコン設置費用', 
       'アンテナ取り付け費用', 
-      '4k TV 設置', 'Email support'],
+      '4k TV 設置', '電話相談お待ちしてます'],
     buttonText: '見積もりは無料です',
     buttonVariant: 'outlined',
   },
@@ -91,7 +90,7 @@ const tiers = [
       'シーリング取り付け',
       '電気工事全て',
     ],
-    buttonText: 'さぁ私たちと始めましょう',
+    buttonText: '仮の文章です',
     buttonVariant: 'contained',
   },
   {
