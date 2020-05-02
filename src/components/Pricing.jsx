@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
+import StarIcon from '@material-ui/icons/StarBorder';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
@@ -74,35 +75,33 @@ const useStyles = makeStyles((theme) => ({
 
 const tiers = [
   {
-    title: '見積もり',
+    title: 'Free',
     price: '0',
-    description: ['エアコン設置費用', 
-      'アンテナ取り付け費用', 
-      '4k TV 設置', 'Email support'],
-    buttonText: '見積もりは無料です',
+    description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
+    buttonText: 'Sign up for free',
     buttonVariant: 'outlined',
   },
   {
-    title: '工事',
-    subheader: '即日着工',
-    price: '150~',
+    title: 'Pro',
+    subheader: 'Most popular',
+    price: '15',
     description: [
-      'エアコン取り付け',
-      '冷蔵庫配送',
-      'シーリング取り付け',
-      '電気工事全て',
+      '20 users included',
+      '10 GB of storage',
+      'Help center access',
+      'Priority email support',
     ],
-    buttonText: 'さぁ私たちと始めましょう',
+    buttonText: 'Get started',
     buttonVariant: 'contained',
   },
   {
-    title: '修理',
+    title: 'Enterprise',
     price: '30',
     description: [
-      '水道点検',
-      'リフォーム',
-      'ガス点検',
-      'コンセント工事',
+      '50 users included',
+      '30 GB of storage',
+      'Help center access',
+      'Phone & email support',
     ],
     buttonText: 'Contact us',
     buttonVariant: 'outlined',
@@ -136,17 +135,17 @@ export default function Pricing() {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Fukuda Electric System Arts
+            Company name
           </Typography>
           <nav>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                水曜定休日
+              Features
             </Link>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                西神奈川3-7-1
+              Enterprise
             </Link>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              045-491-4108
+              Support
             </Link>
           </nav>
           <Button href="#" color="primary" variant="outlined" className={classes.link}>
@@ -157,11 +156,11 @@ export default function Pricing() {
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          私たちにできること
+          Pricing
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
-          電池一本即日配送．徹底的な速度の質の高い
-          サービスを納得のいくお値段でお届けします．
+          Quickly build an effective pricing table for your potential customers with this layout.
+          It&apos;s built with default Material-UI components with little customization.
         </Typography>
       </Container>
       {/* End hero unit */}
@@ -176,6 +175,7 @@ export default function Pricing() {
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
+                  action={tier.title === 'Pro' ? <StarIcon /> : null}
                   className={classes.cardHeader}
                 />
                 <CardContent>
@@ -233,3 +233,4 @@ export default function Pricing() {
     </React.Fragment>
   );
 }
+
