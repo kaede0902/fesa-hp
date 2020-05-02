@@ -85,7 +85,6 @@ const tiers = [
   {
     title: '工事',
     subheader: '即日着工',
-    price: '150~',
     description: [
       'エアコン取り付け',
       '冷蔵庫配送',
@@ -97,7 +96,6 @@ const tiers = [
   },
   {
     title: '修理',
-    price: '30',
     description: [
       '水道点検',
       'リフォーム',
@@ -181,10 +179,9 @@ export default function Pricing() {
                 <CardContent>
                   <div className={classes.cardPricing}>
                     <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
+                      {tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">
-                      /mo
                     </Typography>
                   </div>
                   <ul>
