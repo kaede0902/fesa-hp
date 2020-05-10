@@ -1,30 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 
 const SideMenu = () => {
+  const navText = [
+    'NEW INFO', 'ABOUT WORKS', 'PARTS ORDER',
+    'AIRCON CLEAN', 'LINKS',
+  ];
+  const navItems = navText.map((item, key) => 
+      <Row>
+        <Col className='py-3 my-1 bg-info ' >
+          <h5 key={item}>{item}</h5>
+        </Col>
+      </Row>
+  );
   return (
     <div>
-      <Row>
-        <Col className='py-5 bg-info ' >
-          NEW INFO</Col>
-      </Row>
-      <Row>
-        <Col className='py-5 bg-info ' >
-          ABOUT WORKS</Col>
-      </Row>
-      <Row>
-        <Col className='py-5 bg-info ' >
-          PARTS ORDER</Col>
-      </Row>
-      <Row>
-        <Col className='py-5 bg-info ' >
-          AIRCON CLEAN</Col>
-      </Row>
-      <Row>
-        <Col className='py-5 bg-info ' >
-          LINKS</Col>
-      </Row>
+      {navItems}
     </div>
   );
 };
