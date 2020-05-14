@@ -4,13 +4,15 @@ import './index.css';
 import App from './App';
 import Works from './components/Works';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 
 ReactDOM.render(
   <Router>
       <div>
+      <Switch>
         <Route exact path='/' component={App} />
-        <Route path='/works' component={Works} />
+        <Route exact path='/works' component={Works} />
+      </Switch>
       </div>
   </Router>,
   document.getElementById('root')
