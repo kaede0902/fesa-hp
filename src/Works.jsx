@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col} from 'react-bootstrap';
-import SideMenu from './SideMenu';
-import Header from './Header';
+import SideMenu from './components/SideMenu';
+import Header from './components/Header';
 
 function Works() {
   return (

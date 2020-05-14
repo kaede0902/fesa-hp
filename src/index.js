@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Works from './components/Works';
+import Works from './Works';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ ReactDOM.render(
       <div>
       <Switch>
         <Route exact path='/' component={App} />
-        <Route exact path='/Works' component={Works} />
+        <Route exact path='/works' component={Works} />
       </Switch>
       </div>
   </Router>,
