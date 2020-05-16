@@ -8,8 +8,8 @@ const SideMenu = () => {
     'AIRCON CLEAN', 'LINKS',
   ];
   const navItems = navText.map((item, key) => 
-      <Row key={item}>
-        <Col className='py-3 my-1 bg-info ' >
+      <Row key={item} className='SideBar'>
+        <Col className='py-3 my-1 ' >
           <h5>{item}</h5>
         </Col>
       </Row>

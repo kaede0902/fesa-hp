@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row, Col} from 'react-bootstrap';
-import Logo from '../img/big-logo.gif';
+import Logo from '../img/sk-logo.png';
+import '../css/body.css'
 
 
 const Header = () => {
@@ -13,16 +14,20 @@ const Header = () => {
     お困りの際はぜひ当店にお声をおかけください。
   `;
   return (
-      <Row>
-        <Col className='py-5 bg-info' 
-          xs={3} >
-          <img src={Logo} width = '160px'
-            className='rounded mx-auto d-block '
+      <Row className=''>
+        <Col className='py-1 Green ' 
+          xs={4} md={3}>
+          <img src={Logo}  
+            className=
+              'rounded mx-auto d-block img-fluid logo'
             alt = 'logo'
+            
           />
         </Col>
-        <Col className='py-5 bg-primary' 
-          xs={9}><h1>{headerText}</h1></Col>
+        <Col className='py-1 Pink ' 
+          xs={8} md={9}>
+          <h1>{headerText}</h1>
+        </Col>
       </Row>
   );
 };

@@ -1,0 +1,21 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+.bodyText {
+  background: rgb(4,209,245);
+}
+.SideBar {
+  background: rgb(255,219,22);
+}
+.Pink {
+  background: rgb(255,94,141);
+}
+.Green {
+  background: rgb(104,220,155)
+}
+.btm {
+  margin-bottom: '600px'
+}
+.logo{
+  max-width:100%; height: auto;
+}

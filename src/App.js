@@ -4,19 +4,20 @@ import {Container, Row, Col} from 'react-bootstrap';
 import SideMenu from './components/SideMenu';
 import Header from './components/Header';
 import Body from './components/Body';
+import './css/body.css';
 
 function App() {
 
   return (
-    <Container className='my-5'>
+    <Container className='my-5 '>
       <Header />
-      <Row>
-        <Col className='py-3 bg-primary' 
-          xs={3} >
+      <Row className='bodyText '>
+        <Col className='' 
+          xs={3} md={2}>
           <SideMenu />
         </Col>
-        <Col className='py-3 bg-secondary' 
-          xs={9} >
+        <Col className='' 
+          xs={9} md={10} >
           <Body />
         </Col>
       </Row>
