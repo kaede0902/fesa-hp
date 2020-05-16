@@ -7,26 +7,30 @@ import '../css/body.css'
 
 const Header = () => {
   const headerText = `
-    毎度ありがとうございます！　
-    フクダデンキです！
-
-    充実したサービスの提供を目指しています。
-    お困りの際はぜひ当店にお声をおかけください。
+    お電話はこちら
   `;
   return (
-      <Row className=''>
-        <Col className='py-1 Green ' 
-          xs={4} md={3}>
+      <Row className='mb-5'>
+        <Col xs={0} md={4}> </Col>
+        <Col className='py-1 ' 
+          xs={6} md={4}>
           <img src={Logo}  
             className=
               'rounded mx-auto d-block img-fluid logo'
             alt = 'logo'
+            width='220px'
             
           />
         </Col>
-        <Col className='py-1 Pink ' 
-          xs={8} md={9}>
-          <h1>{headerText}</h1>
+        <Col className='py-1 ' 
+          xs={6} md={4}>
+          <h4 className='
+              d-flex 
+              justify-content-end 
+              align-items-center
+              h-100
+          '>
+            {headerText}</h4>
         </Col>
       </Row>
   );

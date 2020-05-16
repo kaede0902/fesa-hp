@@ -8,7 +8,7 @@ const Body = () => {
   `
 
   return (
-    <h2>{bodyText}</h2>
+    <h2 className='px-4 py-4'>{bodyText}</h2>
   );
 }
 export default Body;

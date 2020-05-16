@@ -1,8 +1,9 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: rgb(190,225,255);
 }
 .bodyText {
-  background: rgb(4,209,245);
+  background: rgb(250,250,250);
 }
 .SideBar {
   background: rgb(255,219,22);
@@ -18,4 +19,7 @@ body {
 }
 .logo{
   max-width:100%; height: auto;
+}
+.oibule {
+  background:#0a143c 
 }
