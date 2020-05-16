@@ -10,7 +10,7 @@ const SideMenu = () => {
   ];
   const navItems = navText.map((item, key) => 
       <Row key={item} className=''>
-        <Col className='py-3 my-1 ' >
+        <Col className='py-1 my-1 ' >
           <Button variant="light"
             size='lg'
             className='w-100'

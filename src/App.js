@@ -14,11 +14,11 @@ function App() {
       <Header />
       <Row className=''>
         <Col className='' 
-          xs={3} md={2}>
+          xs={0} md={2}>
           <SideMenu />
         </Col>
         <Col className='bodyText' 
-          xs={9} md={10} >
+          xs={12} md={10} >
           <Body />
         </Col>
       </Row>
