@@ -12,12 +12,12 @@ function App() {
   return (
     <Container className='my-5 '>
       <Header />
-      <Row className='bodyText'>
+      <Row className=''>
         <Col className='' 
           xs={3} md={2}>
           <SideMenu />
         </Col>
-        <Col className='' 
+        <Col className='bodyText' 
           xs={9} md={10} >
           <Body />
         </Col>
