@@ -7,13 +7,14 @@ import '../css/body.css'
 
 const Header = () => {
   const headerText = `
-    お電話はこちら
+    横浜市の「まちの電気屋さん」フクダデンキに
+    「全てを」お任せください．
   `;
   return (
       <Row className='mb-5'>
         <Col xs={0} md={4}> </Col>
         <Col className='py-1 ' 
-          xs={6} md={4}>
+          xs={12} md={4}>
           <img src={Logo}  
             className=
               'rounded mx-auto d-block img-fluid logo'
@@ -23,7 +24,7 @@ const Header = () => {
           />
         </Col>
         <Col className='py-1 ' 
-          xs={6} md={4}>
+          xs={0} md={4}>
           <h4 className='
               d-flex 
               justify-content-end 
