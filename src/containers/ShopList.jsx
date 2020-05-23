@@ -1,11 +1,11 @@
 import React from 'react';
 import Home from './Home';
-import WorksInfo from '../components/WorksInfo'
+import ShopInfo from '../components/ShopInfo'
 
 function ShopList() {
 
   return (
-    <Home body={<WorksInfo />}/>
+    <Home body={<ShopInfo />}/>
   );
 }
 export default ShopList;
