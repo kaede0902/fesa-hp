@@ -29,6 +29,7 @@ const ShopInfo = () => {
         </Card>
     </div>
   );
+  document.title = '店舗一覧'
   return (
     <CardGroup
       className='px-4 py-4 align-item-center justify-content-center'
