@@ -1,11 +1,11 @@
 import React from 'react';
 import Home from './Home';
-import NewsInfo from '../components/NewsInfo'
+import SaleInfo from '../components/SaleInfo'
 
 function NewInfo() {
 
   return (
-    <Home body={<NewsInfo />}/>
+    <Home body={<SaleInfo />}/>
   );
 }
 export default NewInfo;

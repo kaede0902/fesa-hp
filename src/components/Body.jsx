@@ -23,7 +23,7 @@ const Body = () => {
           className='mx-2 my-2 '
         >
           <Card.Body>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12994.900530147068!2d139.625848!3d35.486344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa36eb838d390fdeb!2z44OV44Kv44OA44OH44Oz44Kt5YWt6KeS5qmL5bqX!5e0!3m2!1sen!2sjp!4v1590818220562!5m2!1sen!2sjp" 
+<iframe src={item.mapLink} 
 width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' aria-hidden="false" tabindex="0"
 >
 </iframe>  
@@ -44,7 +44,6 @@ width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' a
 
   return (
     <div>
-    {bodyHeader}
     <CardGroup
       className='px-4 py-4 
         align-item-center justify-content-center 
@@ -53,6 +52,7 @@ width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' a
     >
       {ShopCards}
     </CardGroup>
+    {bodyHeader}
     </div>
   );
 }

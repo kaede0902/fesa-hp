@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardGroup, } from 'react-bootstrap/';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from 'react-bootstrap/Image' 
 
 import works from '../WorkDataList'

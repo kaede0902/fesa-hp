@@ -3,7 +3,7 @@ import React from 'react';
 const NewsInfo = () => {
   const NewsText = 
   `
-    newest infomation
+    2020令和2年，夏のセールを開催します！
   `
   document.title = '最新情報☆ '
   return (
