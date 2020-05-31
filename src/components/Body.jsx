@@ -46,7 +46,10 @@ width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' a
     <div>
     {bodyHeader}
     <CardGroup
-      className='px-4 py-4 align-item-center justify-content-center'
+      className='px-4 py-4 
+        align-item-center justify-content-center 
+        text-center
+      '
     >
       {ShopCards}
     </CardGroup>
