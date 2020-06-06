@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardGroup, } from 'react-bootstrap/';
 import shops from '../ShopDataList';
 
-const ShopInfo = () => {
+const Shops = () => {
   const ShopCards = shops.map((item, key) => 
     <div
       key={item.tel} className='d-flex flex-row'
@@ -38,4 +38,4 @@ const ShopInfo = () => {
     </CardGroup>
   );
 }
-export default ShopInfo;
+export default Shops;

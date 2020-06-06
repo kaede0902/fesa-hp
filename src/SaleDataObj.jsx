@@ -1,7 +1,7 @@
 const SaleDataObj = {
   summer2020: {
     name: '夏の大感謝セール',
-    due: '2020(令和2)年6月26日 ~ 7月10日',
+    due: '2020(令和2)年06月26日 ~ 07月05日',
     souvenir: {
       name: '崎陽軒のシュウマイ',
       desc: '真空パック15個入り',
@@ -9,13 +9,13 @@ const SaleDataObj = {
       imgLink: '',
     },
     rattle: {
-      special: '米10kg',
-      1: '米2kg',
-      2: '米1kg',
-      3: 'お楽しみ',
-      4: 'じゃがいも',
-      5: '玉ねぎ',
-      6: 'ティッシュ1箱',
+        special: '米10kg',
+        one: '米2kg',
+        two: '米1kg',
+        three: 'お楽しみ',
+        four: 'じゃがいも',
+        five: '玉ねぎ',
+        seven: 'ティッシュ1箱',
     },
     purchaseSouvenir: {
       1: '紀州みなべの南高梅【蜜】',

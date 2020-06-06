@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Links() {
+function AirConClean() {
 
   return (
     <div>hoge</div>
   );
 }
-export default Links;
+export default AirConClean;
