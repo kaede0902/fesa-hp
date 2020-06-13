@@ -40,7 +40,7 @@ width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' a
         </Card>
     </div>
   );
-  document.title = 'フクダデンキ';
+  document.title = 'Fukuda Electric System Arts';
 
   return (
     <div>

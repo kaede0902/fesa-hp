@@ -40,7 +40,7 @@ let loading = () => <div>Loading...</div>
              <Route render={() => <h1>not found!.</h1>} />
             </Switch>
             </Suspense>
-            </Router>,
+            </Router>
         </Col>
       </Row>
       <Footer />

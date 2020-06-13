@@ -1,14 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row, Col} from 'react-bootstrap';
-import Logo from '../img/sk-logo.png';
+import Logo from '../img/fesa-simple-logo.svg';
 import '../css/body.css'
 
 
 const Header = () => {
   const headerText = `
-    横浜市の「まちの電気屋さん」フクダデンキに
-    「全てを」お任せください．
+    神奈川区のお困りごとはお任せ下さい．
   `;
   return (
       <Row className='mb-5'>
