@@ -13,7 +13,7 @@ function App() {
 let loading = () => <div>Loading...</div>
 
   return (
-    <Container className='my-5 '>
+    <Container className=''>
       <Header />
       <Row className='leftside'>
         <Col className='' 
