@@ -1,20 +1,20 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Row} from 'react-bootstrap';
 import { Card, CardDeck, ListGroup, ListGroupItem,} from 'react-bootstrap/';
 import items from '../summer2020';
 
 const NewInfo = () => {
-  document.title = '六角橋店,夏の大感謝セール';
+  document.title = '六角橋店 夏の大感謝セール';
   const SalesCards = items.map((item, key) => 
     <Card 
       style = {{ width: '20rem' }}
       border = 'primary'
-      className='my-2 text-center '
+      className='my-2 mx-auto'
       key={item.title}
     >
       <Card.Body>
-        <Card.Header>
+        <Card.Header
+          className='my-2 text-center'>
           <h3>{item.title}</h3>
         </Card.Header>    
         <Card.Img variant="top" src={item.imgLink} />
@@ -34,18 +34,18 @@ const NewInfo = () => {
     <div
       className ='px-2 py-4'
     >
-      <Row md={10} className='
-        align-item-center justify-content-center 
+      <h3 className='
+        text-center 
       '>
-        <h1>六角橋店，夏の大感謝セール！</h1>
-      </Row>
-      <Row md={10} className='
-        align-item-center justify-content-center 
+        六角橋店，夏の大感謝セール！
+      </h3>
+      <h4 className='
+        text-center 
       '>
-        <h3>2020(令和2)年06月26日 ~ 07月05日</h3>
-      </Row>
+        2020(令和2)年06月26日 ~ 07月05日
+      </h4>
       <CardDeck  className='
-        align-item-center justify-content-center 
+        justify-content-center 
       '>
         {SalesCards}
       </CardDeck>

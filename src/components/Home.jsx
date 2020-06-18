@@ -9,7 +9,7 @@ const Body = () => {
 高所の蛍光灯や電球の交換など，お気軽にお電話ください！
   `;
   const bodyHeader = (
-    <h2 className='px-4 py-4'>{bodyText}</h2>
+    <h3 className='px-4 py-4'>{bodyText}</h3>
   );
 
 

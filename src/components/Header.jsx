@@ -1,16 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Row, Col} from 'react-bootstrap';
-import {Navbar, Nav, NavDropDown} from 'react-bootstrap';
+import {Navbar, Nav, } from 'react-bootstrap';
 import logo from '../img/narrow-logo.svg';
 import '../css/body.css'
 import NavData from '../NavDataList'
 
 
 const Header = () => {
-  const headerText = `
-    神奈川区のお困りごとはお任せ下さい．
-  `;
   const navItems = NavData.map((item, key) => 
     <Nav.Link 
       href={item.link} key={key}
@@ -19,7 +15,6 @@ const Header = () => {
 
 
   return (
-      <Row className=''>
       <Navbar collapseOnSelect expand = 'lg'>
         <Navbar.Brand href="./" >
           <img
@@ -30,7 +25,6 @@ const Header = () => {
           />
         </Navbar.Brand>
 
-      
         <Navbar.Toggle 
           aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -39,7 +33,6 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      </Row>
   );
 };
 export default Header;

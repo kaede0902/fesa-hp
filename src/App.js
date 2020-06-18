@@ -2,7 +2,7 @@ import React ,{ Suspense }from 'react';
 import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import routes from './routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, } from 'react-bootstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './css/body.css';
