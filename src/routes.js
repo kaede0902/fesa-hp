@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = React.lazy( () => 
-  import('./components/Home')
+  import('./containers/Home')
 );
 const Works = React.lazy( () => 
   import('./containers/Works')

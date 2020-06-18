@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardGroup, } from 'react-bootstrap/';
-import shops from '../ShopDataList';
+import ShopData from '../data/ShopData';
 
 const Body = () => {
   const bodyText = 
@@ -12,21 +12,54 @@ const Body = () => {
     <h3 className='px-4 py-4'>{bodyText}</h3>
   );
 
-
-  const ShopCards = shops.map((item, key) => 
+  const ShowMain = ((item) => 
+    <CardGroup >
+    <Card  
+      border = 'danger'
+      style = {{ 
+        height : '30rem'
+      }}
+      className='mx-auto'
+    >
+      <Card.Body className='text-center'>
+        <iframe src={item.mapLink} 
+          frameborder="0"  allowfullscreen="" 
+          title = 'main shop' aria-hidden="false" 
+          tabindex="0"
+          width = '100%'
+          height = '75%'
+        >
+      </iframe>  
+        <Card.Title>
+          フクダデンキ{item.name}店
+        </Card.Title>    
+        <Card.Link
+          className = 'text-danger'
+          href={ 'tel:'+ item.tel}
+        >
+          {item.tel}
+        </Card.Link>
+      </Card.Body>
+    </Card>
+    </CardGroup>
+  );
+  const ShowSub = ShopData.sub.map((item, key) => 
     <div
       key={item.tel} className=''
     >
         <Card 
           style = {{ width: '20rem' }}
           border = 'primary'
-          className='mx-2 my-2 '
+          className='my-2 mx-auto'
         >
           <Card.Body>
-<iframe src={item.mapLink} 
-width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' aria-hidden="false" tabindex="0"
->
-</iframe>  
+            <iframe src={item.mapLink} 
+              width="250rem" height="150" 
+              frameborder="0"  allowfullscreen="" 
+              title = 'hoge' aria-hidden="false" 
+              tabindex="0"
+            >
+            </iframe>  
             <Card.Title>
               フクダデンキ{item.name}店
             </Card.Title>    
@@ -44,13 +77,13 @@ width="250rem" height="150" frameborder="0"  allowfullscreen="" title = 'hoge' a
 
   return (
     <div>
+    {ShowMain(ShopData.main)}
     <CardGroup
       className='px-4 py-4 
         align-item-center justify-content-center 
-        text-center
-      '
+        text-center'
     >
-      {ShopCards}
+      {ShowSub}
     </CardGroup>
     {bodyHeader}
     </div>
