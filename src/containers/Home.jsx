@@ -17,7 +17,8 @@ const Body = () => {
     <Card  
       border = 'danger'
       style = {{ 
-        height : '30rem'
+        height : '30rem',
+        width  : '100%'
       }}
       className='mx-auto'
     >
@@ -48,13 +49,13 @@ const Body = () => {
       key={item.tel} className=''
     >
         <Card 
-          style = {{ width: '20rem' }}
+          style = {{ width: '100%' }}
           border = 'primary'
           className='my-2 mx-auto'
         >
           <Card.Body>
             <iframe src={item.mapLink} 
-              width="250rem" height="150" 
+              width="100%" height="150" 
               frameborder="0"  allowfullscreen="" 
               title = 'hoge' aria-hidden="false" 
               tabindex="0"
@@ -79,9 +80,10 @@ const Body = () => {
     <div>
     {ShowMain(ShopData.main)}
     <CardGroup
-      className='px-4 py-4 
-        align-item-center justify-content-center 
-        text-center'
+      className=' 
+        mx-auto
+        text-center
+      '
     >
       {ShowSub}
     </CardGroup>

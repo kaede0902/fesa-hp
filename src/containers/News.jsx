@@ -49,6 +49,10 @@ const NewInfo = () => {
       '>
         {SalesCards}
       </CardDeck>
+      <p className='text-danger'>
+        * 大感謝セール実施は六角橋店のみとなります
+        * ご来場記念品のお渡しには引換券が必要です
+      </p>
     </div>
   );
 };
