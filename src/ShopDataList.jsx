@@ -9,7 +9,7 @@ const ShopDataList =[
       name: '妙蓮寺',
       adress: '横浜市港北区菊名1-4-1',
       tel: '045-421-5752',
-      mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.240912103213!2d139.6306256152538!3d35.49832078023735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185e968c71559b%3A0x18cd27a1d840bf9c!2z44CSMjIyLTAwMTEg56We5aWI5bed55yM5qiq5rWc5biC5riv5YyX5Yy66I-K5ZCN77yR5LiB55uu77yU4oiS77yR!5e0!3m2!1sja!2sjp!4v1590892750428!5m2!1sja!2sjp" ,
+      mapLink: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d535.6765823397743!2d139.63290874440844!3d35.49843407785613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185e968c71559b%3A0x18cd27a1d840bf9c!2z44CSMjIyLTAwMTEg56We5aWI5bed55yM5qiq5rWc5biC5riv5YyX5Yy66I-K5ZCN77yR5LiB55uu77yU4oiS77yR!5e0!3m2!1sja!2sjp!4v1592624801855!5m2!1sja!2sjp" ,
     },
     {
       name: '市が尾',

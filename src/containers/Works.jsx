@@ -2,15 +2,15 @@ import React from 'react';
 import { Card, CardGroup, } from 'react-bootstrap/';
 import Image from 'react-bootstrap/Image' 
 
-import works from '../WorkDataList'
+import works from '../data/WorkData'
 
 const Works = () => {
   const WorkCards = works.map((item, key) => 
     <div
-      key = {item.name}
+      key = {key}
     >
         <Card 
-          style = {{ width: '16rem' }}
+          style = {{ width: '32rem' }}
           border = 'primary'
           className='mx-2 my-2'
         >
@@ -18,8 +18,8 @@ const Works = () => {
             <Card.Title>
               {item.name}
             </Card.Title>    
-            <Image src=
-              "https://dummyimage.com/300x200/000111/fff&text=dummy+image" fluid />
+            <Image src={item.imgLink}
+            fluid />
           </Card.Body>
         </Card>
     </div>

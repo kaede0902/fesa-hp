@@ -1,15 +1,21 @@
 import React from 'react';
 import { Card, CardGroup, } from 'react-bootstrap/';
 import ShopData from '../data/ShopData';
+import FesaShot from '../img/fesa-shot.jpg';
 
-const Body = () => {
-  const bodyText = 
+const Home = () => {
+  const OurWorksText = 
   `
 地デジアンテナの設置、エアコン取り付け、スイッチ修理、コンセントの増設、お買い上げいただいた商品の配達などお引き受け致しております.
 高所の蛍光灯や電球の交換など，お気軽にお電話ください！
   `;
-  const bodyHeader = (
-    <h3 className='px-4 py-4'>{bodyText}</h3>
+  const OurWorks = (
+    <div className='w-50 text-center mx-auto my-5 '>
+      <h3 className='text-primary'>
+        私たちにできること
+      </h3>
+      {OurWorksText}
+    </div>
   );
 
   const ShowMain = ((item) => 
@@ -17,7 +23,7 @@ const Body = () => {
     <Card  
       border = 'danger'
       style = {{ 
-        height : '30rem',
+        height : '35rem',
         width  : '100%'
       }}
       className='mx-auto'
@@ -28,7 +34,7 @@ const Body = () => {
           title = 'main shop' aria-hidden="false" 
           tabindex="0"
           width = '100%'
-          height = '75%'
+          height = '90%'
         >
       </iframe>  
         <Card.Title>
@@ -49,7 +55,7 @@ const Body = () => {
       key={item.tel} className=''
     >
         <Card 
-          style = {{ width: '100%' }}
+          style = {{ width: '23.7rem' }}
           border = 'primary'
           className='my-2 mx-auto'
         >
@@ -87,8 +93,11 @@ const Body = () => {
     >
       {ShowSub}
     </CardGroup>
-    {bodyHeader}
+    {OurWorks}
+      <img src={FesaShot} alt="fesashot" 
+        className='w-100'
+      />
     </div>
   );
 }
-export default Body;
+export default Home;

@@ -6,9 +6,6 @@ const Home = React.lazy( () =>
 const Works = React.lazy( () => 
   import('./containers/Works')
 );
-const Shops = React.lazy( () => 
-  import('./containers/Shops')
-);
 const News = React.lazy( () => 
   import('./containers/News')
 );
