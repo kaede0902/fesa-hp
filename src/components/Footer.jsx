@@ -13,14 +13,21 @@ const Footer = () => {
   );
 
   return (
-    <Row className='my-3'>
-      <Col className='' md={8}>
-        {shopItems}
-      </Col>
-      <Col className='' md={4}>
-        copyright: Fukuda Electric System Arts
-      </Col>
-    </Row>
+    <div>
+      <Row className='my-3'>
+        <Col className='' md={8}>
+          {shopItems}
+        </Col>
+        <Col className='' md={4}>
+        </Col>
+      </Row>
+      <Row>
+        <small className='text-center mx-auto'>
+          &copy; 2020 Fukuda Electric 
+          System Arts Co.
+        </small>
+      </Row>
+    </div>
   )
 }
 export default Footer;
