@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardGroup, } from 'react-bootstrap/';
 import ShopData from '../data/ShopData';
 import FesaShot from '../img/fesa-shot.jpg';
+import '../css/home.css';
 
 const Home = () => {
   const OurWorksText = 
@@ -35,6 +36,7 @@ const Home = () => {
           tabindex="0"
           width = '100%'
           height = '90%'
+          className='mapframe'
         >
       </iframe>  
         <Card.Title>
