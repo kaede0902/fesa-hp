@@ -1,8 +1,13 @@
 import React from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row, Col} from 'react-bootstrap';
 import '../css/body.css'
 import shops from '../ShopDataList';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core'; //fontawesomeのコアファイル
+import { fab } from '@fortawesome/free-brands-svg-icons'; //fontawesomeのbrandアイコンのインポート
+library.add(fab, ); 
 
 const Footer = () => {
   const shopItems = shops.map((item, key) =>
@@ -19,6 +24,10 @@ const Footer = () => {
           {shopItems}
         </Col>
         <Col className='' md={4}>
+        <a href="https://github.com/kaede0902">
+          Developer:
+          <FontAwesomeIcon icon={['fab','github',]} />
+        </a>
         </Col>
       </Row>
       <Row>
