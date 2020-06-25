@@ -9,13 +9,19 @@ import Electrick from '../img/electrick.jpg';
 
 const WorkData = [
   { name: 'エアコン工事', 
-    imgLink: AirconLink},
+    imgLink: AirconLink,
+    desc: '取外のみや移設も', 
+  },
   { name: 'リフォーム工事', 
-    imgLink: ReformLink},
+    imgLink: ReformLink,
+    desc: 'クロス張り替え，棚の設置，てすり取り付け，網戸交換',
+  },
   { name: '水道工事', 
     imgLink: WaterLink},
   { name: '電気工事', 
-    imgLink: Electrick},
+    imgLink: Electrick,
+    desc: 'ブレーカー，分電盤，コンセント，エアコン専用回路工事',
+  },
   { name: 'ガス工事', 
     imgLink: GasTable},
   { name: '照明器具交換', 
@@ -23,6 +29,8 @@ const WorkData = [
   { name: 'アンテナ工事',
     imgLink: AntennaLink,},
   { name: '修理全般',
-    imgLink: FixLink,},
+    imgLink: FixLink,
+    desc: 'お気軽にお持ち込みください',
+  },
 ];
 export default WorkData;

@@ -20,6 +20,9 @@ const Works = () => {
             </Card.Title>    
             <Image src={item.imgLink}
             fluid />
+          <Card.Footer>
+            {item.desc}
+          </Card.Footer>
           </Card.Body>
         </Card>
     </div>
