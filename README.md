@@ -1,10 +1,15 @@
 # FESA -HP
-職場のコーポレートサイト
 
-Top page, Works, Shopsが必要
+フクダデンキのコーポレートサイト
 
-## tasks
-Router 動いてない
-Footer作る
+情報を修正する際は
 
+* `data/ShopData.jsx`
+* `data/WorkData.jsx`
+* `./summer2020.jsx`
 
+を修正すると反映されます
+
+## todos
+* OGP img, desc, data, の設定
+* Next.js で再構築して
