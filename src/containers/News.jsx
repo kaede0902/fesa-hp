@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardDeck, ListGroup, ListGroupItem,} from 'react-bootstrap/';
-import items from '../summer2020';
+import items from '../data/summer2020';
 
 const NewInfo = () => {
   document.title = '六角橋店 夏の大感謝セール';

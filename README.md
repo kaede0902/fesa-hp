@@ -1,12 +1,14 @@
 # FESA -HP
 
+## これは何
+
 https://fesa.netlify.app/
 
 * フクダデンキのコーポレートサイト
 
 https://kei-s-lifehack.hatenablog.com/entry/works
 
-* 設計での要件など
+* 設計での要件や作成時の工夫など
 
 ## 内容変更方法
 
@@ -16,7 +18,12 @@ https://kei-s-lifehack.hatenablog.com/entry/works
 * `data/WorkData.jsx`
 * `./summer2020.jsx`
 
-を修正します
+をソースコードから編集
+
+```
+npm run build
+cp _redirect bulid
+```
 
 その後( 会社のメアドで ) 
 

@@ -1,6 +1,6 @@
-import shumai from './img/shumai.jpg';
-import garagara from './img/garagara.png';
-import umeGirl from './img/ume_girl.png';
+import shumai from '../img/shumai.jpg';
+import garagara from '../img/garagara.png';
+import umeGirl from '../img/ume_girl.png';
 
 
 const summer2020 = [
