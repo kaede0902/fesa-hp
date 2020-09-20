@@ -30,5 +30,5 @@ production を deploy すれば 適用されます
 
 * meta data の適用。検索最適化
 * OGP img, desc, data, の設定
-* Next.js で再構築して 静的排泄して FTP 先の hi-ho に直接送る
+* Next.js で再構築して node なしで動く状態にして FTP 先の hi-ho に直接送る
 * contentful あたりの cms を埋め込んで web から編集できるようにする
